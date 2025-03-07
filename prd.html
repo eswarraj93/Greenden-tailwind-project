@@ -14,8 +14,8 @@
         <h1 class="text-2xl">GREENDEN</h1>
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -31,66 +31,102 @@
         </ul>
     </nav>
 
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 transition-all duration-1000 "
+        style="width: 50%;height: 100vh;right:-50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex  flex-col items-center text-gray-700 space-y-4 p-5">
+            <li>
+                <a href="#" class="hover:underline hover:text-black">Home</a>
+            </li>
+            <li>
+                <a href="./prd.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+        </ul>
+    </section>
+
     <!--header section-->
     <section>
 
-        <h1 class="font-extrabold text-center text-3xl text-black mt-5">Our Products</h1>
+        <!--<h1 class="font-extrabold text-center text-3xl text-black mt-5">Our Products</h1>
         <div class="flex justify-center gap-5">
-            <input type="text" placeholder="Search for a Product..." class="border border-black p-2 rounded ml-5 mt-5"
-                style=" width: 70%;">
-        </div>
-        </div>
+            <input id="Search" type="text" placeholder="Search for a Product..."
+                class="border border-black p-2 rounded ml-5 mt-5" style=" width: 70%;"> 
+        </div>-->
+
     </section>
     <section class="p-4 text-center">
+        <h1 class="font-extrabold text-center text-3xl text-black mt-5">Our Products</h1>
+        <input id="Search" type="text" placeholder="Search for a Product..."
+            class="border border-black p-2 rounded ml-5 mt-5" style=" width: 70%;">
+
         <p>Check out our best selling plants</p>
 
-        <div class="grid grid-cols-2 mt-5 gap-4 md:grid-cols-4">
+        <div id="Productcontainer" class="grid grid-cols-2 mt-5 gap-4 md:grid-cols-4">
             <div class="hover:shadow-xl">
                 <img src="./img1.jpg" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
                 <h2 class="text-xl font-medium"></h2>
+                <h1>Fiddle Leaf Fig</h1>
                 <p>20$</p>
             </div>
             <div>
-                <img src="./img2.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
-                    alt="">
-                <h2 class=" text-xl font-medium"></h2>
-                <p>15$</p>
+                <div class="hover:shadow-xl">
+                    <img src="./img2.jfif"
+                        class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                    <h2 class=" text-xl font-medium"></h2>
+                    <h1>Snake Plant</h1>
+                    <p>15$</p>
+                </div>
             </div>
             <div>
-                <img src="./img3.jpg" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
-                    alt="">
-                <h2 class=" text-xl font-medium"></h2>
-                <p>25$</p>
+                <div class="hover:shadow-xl">
+                    <img src="./img3.jpg"
+                        class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                    <h2 class=" text-xl font-medium"></h2>
+                    <h1>Monstera</h1>
+                    <p>25$</p>
+                </div>
             </div>
             <div>
-                <img src="./img4.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
-                    alt="">
-                <h2 class=" text-xl font-medium"></h2>
-                <p>10$</p>
+                <div class="hover:shadow-xl">
+                    <img src="./img4.jfif"
+                        class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+                    <h2 class=" text-xl font-medium"></h2>
+                    <h1>Pothos</h1>
+                    <p>10$</p>
+                </div>
             </div>
             <div class="hover:shadow-xl">
                 <img src="./img5.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
                 <h2 class="text-xl font-medium"></h2>
+                <h1>Calathea</h1>
                 <p>15$</p>
             </div>
             <div class="hover:shadow-xl">
                 <img src="./img6.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
                 <h2 class="text-xl font-medium"></h2>
+                <h1>ZZ Plant</h1>
                 <p>20$</p>
             </div>
             <div class="hover:shadow-xl">
                 <img src="./img7.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
                 <h2 class="text-xl font-medium"></h2>
+                <h1>Spider Plant</h1>
                 <p>25$</p>
             </div>
             <div class="hover:shadow-xl">
                 <img src="./img8.jfif" class="w-60 h-60 rounded inline hover:shadow-xl transform hover:-translate-y-2"
                     alt="">
                 <h2 class="text-xl font-medium"></h2>
+                <h1>Money Tree</h1>
                 <p>18$</p>
             </div>
         </div>
@@ -101,6 +137,9 @@
     <footer class="bg-green-100 p-5 text-center">
         <p>&copy; 2021 Greenden. All rights reserved</p>
         <p>For Any Queries <a href=""> Contact Us</a></p>
-        
+
+        <script src="prd.js">  </script>
+
 </body>
+
 </html>

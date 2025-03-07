@@ -14,7 +14,7 @@
         <h1 class="text-2xl">GREENDEN</h1>
 
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -30,6 +30,24 @@
                 <a href="./contact.html" class="hover:underline hover:text-black">Contact</a>
         </ul>
     </nav>
+
+    <!--side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 transition-all duration-1000 "
+        style="width: 50%;height: 100vh;right:-50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex  flex-col items-center text-gray-700 space-y-4 p-5">
+            <li>
+                <a href="#" class="hover:underline hover:text-black">Home</a>
+            </li>
+            <li>
+                <a href="./prd.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+        </ul>
+    </section>
 
     <!--contact form-->
     <section class="bg-white dark:bg-gray-900">
@@ -67,9 +85,28 @@
         </div>
     </section>
     <!--footer-->
-    <footer class="bg-green-100 p-5 text-center">
+    <footer class="bg-green-100 p-5 text-center ">
+
+
         <p>&copy; 2021 Greenden. All rights reserved</p>
         <p>For Any Queries <a href=""> Contact Us</a></p>
+
+        <script>
+            //selecting sidenavbar,
+            var sideNav = document.getElementById('sidenav');
+            var menuicon = document.getElementById('menuicon');
+            var closenav = document.getElementById('closenav');
+
+            //adding click event listener to menuicon
+            menuicon.addEventListener('click', function () {
+                sidenav.style.right = 0
+            });
+            //adding click event listener to closenav
+            closenav.addEventListener('click', function () {
+                sidenav.style.right = '-50%'
+            });
+        </script>
+
 
 </body>
 
